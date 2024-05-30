@@ -43,6 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     ${job.languages.map(lang => `<span class="language">${lang}</span>`).join('')}
                     ${job.tools.map(tool => `<span class="tool">${tool}</span>`).join('')}
                 </div>
+                
             `;
             jobListingsContainer.appendChild(jobElement);
         });
@@ -81,8 +82,19 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
-//filtering based on job listings
-const filterContainer = document.getElementById('filter-container');
-const filters = new Set();
+//add clear button to clear all filters
+// document.addEventListener('DOMContentLoaded', () => {
+//     const clearButton = document.getElementById('clear');
+//     clearButton.addEventListener('click', () => {
+//         filters.clear();
+//         renderFilters();
+//         clearButton.display="block";
+//         fetch('./data.json')
+//             .then(response => response.json())
+//             .then(data => {
+//                 renderJobs(data);
+//             });
+//     });
+// });
 
   

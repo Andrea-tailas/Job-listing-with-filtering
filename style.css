@@ -79,7 +79,21 @@ align-items: center;
 .job-listing .job-info span{
     margin-right: 15px;
 }
-
+.job-listing .new, .featured{
+    background: #5ba4a4;
+    color: white;
+    border-radius: 12px;
+    padding: 5px 10px;
+    font-size: 0.8em;
+    margin-right: 10px;
+    cursor: pointer;
+}
+#clear {
+    display: none;
+}
+.job-listing .job-header img{
+    width: 7%;
+}
 h1 {
     margin: 0;
 }
