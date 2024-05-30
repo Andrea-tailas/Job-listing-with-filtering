@@ -224,61 +224,45 @@ margin-left: 5rem;
 }
 
 /* Media Queries to my code */
+@media only screen and (max-width: 375px) {
+    *{
+        font-size: 1rem;
+        
+        border: 0;
+    }
+    .job-listing {
+        width: 89%;
+    }
+    .job-listing .position{
+        margin-left: 0rem;
+    
+    }
+    .job-listing .job-info{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        align-items: center;
+        margin: 10px 0;
+        padding: 5px;
+        margin-top: 1rem;
+        margin-left: 0;
+    }
+    .job-listing .position{
+        margin-left: 0rem;
+    }
+    .job-listing .job-tags {
+        width: 5.5rem;
+    
+    }
+}
+@media only screen and (max-width: 425px) {
+    .job-listing {
+        width: 89%;
+    }
+}
 @media (max-width: 1024px) {
     .job-listing {
         width: 89%;
     }
 }
-
-@media (max-width: 768px) {
-    .job-listing {
-        width: 95%;
-    }
-
-    .job-header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .job-info span {
-        display: block;
-        margin: 5px 0;
-    }
-}
-
-@media (max-width: 600px) {
-    header {
-        padding: 10px;
-    }
-
-    #filter-container {
-        margin-top: 10px;
-    }
-
-    .filter {
-        padding: 5px;
-        margin: 3px;
-    }
-
-    .job-listing {
-        width: 100%;
-        margin: 10px 0;
-        padding: 15px;
-        
-    }
-
-    .position {
-        font-size: 1em;
-    }
-
-    .job-info {
-        font-size: 0.8em;
-    }
-
-    .job-tags span {
-        padding: 3px 5px;
-        margin: 3px;
-    }
-}
-
   
