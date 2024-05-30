@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
             renderJobs(jobs);
             addFilterListeners(jobs);
         })
-        .catch(error => console.error('Error fetching job listings:', error));
+        .catch(error => console.error(error));
 
     function renderJobs(jobs) {
         jobListingsContainer.innerHTML = '';
@@ -81,5 +81,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+//filtering based on job listings
+const filterContainer = document.getElementById('filter-container');
+const filters = new Set();
 
   
